@@ -1,0 +1,246 @@
+* {
+    box-sizing: border-box;
+}
+
+:root {
+    --color-black-primary: #152427;
+    --color-green-primary: #143c3c;
+    --color-gray-primary: #575d5e;
+    --color-black-green-primary: #143c3c;
+}
+
+html {
+    font-size: 62.5%;
+}
+
+body {
+    font-size: 1.6rem;
+    font-family: "Poppins", serif;
+}
+
+/* Common */
+a {
+    text-decoration: none;
+}
+
+.container {
+    width: 1140px;
+    margin: 0 auto;
+}
+
+.btn {
+    width: 173px;
+    height: 57px;
+    flex-shrink: 0;
+    border-radius: 40px;
+    border: 1.5px solid #143c3c;
+    background: var(--color-black-green-primary);
+    color: #fff;
+    text-align: center;
+    font-family: "Public Sans";
+    font-size: 18px;
+    font-weight: 500;
+    line-height: 1.56;
+}
+
+.btn:hover {
+    opacity: 0.9;
+}
+
+/* Header */
+.header {
+    padding: 20px 0 13px 0;
+}
+
+.header__container {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+}
+
+.navbar {
+    display: flex;
+    column-gap: 88px;
+}
+
+.nav__list {
+    display: flex;
+    align-items: center;
+    justify-content: space-evenly;
+    column-gap: 38px;
+}
+
+.nav__link {
+    font-family: "Public Sans";
+    color: var(--color-gray-primary);
+    font-size: 1.8rem;
+    font-weight: 500;
+    line-height: 1.56;
+}
+
+.nav__link:hover {
+    color: var(--color-black-primary);
+}
+
+.nav__under {
+    position: relative;
+    color: var(--color-black-primary);
+}
+
+.nav__under::after {
+    position: absolute;
+    left: 0;
+    bottom: -25px;
+    display: inline-block;
+    content: "";
+    width: 16px;
+    height: 2px;
+    background: var(--color-green-primary);
+    flex-shrink: 0;
+}
+
+/* Intro */
+.intro {
+    margin-top: 60px;
+    position: relative;
+    padding-bottom: 90px;
+}
+
+.decor1 {
+    position: absolute;
+    left: 315px;
+    top: -10px;
+}
+
+.decor2 {
+    position: absolute;
+    left: 360px;
+    top: -15px;
+}
+.decor3 {
+    position: absolute;
+    bottom: 50px;
+    right: 80px;
+}
+
+.decor4 {
+    position: absolute;
+    bottom: 28px;
+    right: 125px;
+}
+
+.intro__content {
+    display: flex;
+}
+
+.intro-left {
+    width: 41.3%;
+    margin-top: 43px;
+}
+
+.intro__heading {
+    color: var(--color-black-primary);
+    font-family: "Public Sans";
+    font-size: 5rem;
+    font-weight: 800;
+    line-height: 1.2;
+    max-width: 368px;
+}
+
+.intro__desc {
+    margin: 20px 0 42px 0;
+    color: var(--color-gray-primary);
+    font-family: "Public Sans";
+    font-size: 1.8rem;
+    font-weight: 500;
+    line-height: 1.56;
+    max-width: 341px;
+}
+
+.intro__cta {
+    display: flex;
+    align-items: center;
+}
+
+.intro__group {
+    display: flex;
+    align-items: center;
+    column-gap: 15px;
+}
+
+.intro__group:hover {
+    opacity: 0.9;
+    color: red;
+}
+
+.intro_icon {
+    position: relative;
+    cursor: pointer;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin-left: 42px;
+    width: 44px;
+    height: 43px;
+    border-radius: 50%;
+    background: #83a17d;
+}
+
+.intro_icon::before {
+    position: absolute;
+    content: "";
+    width: 50px;
+    height: 50px;
+    flex-shrink: 0;
+    border: 4px solid var(--color-black-green-primary);
+    clip-path: inset(0 50% 0 0);
+    border-radius: 50%;
+}
+
+.intro__watch {
+    color: #152427;
+    text-align: center;
+    font-size: 1.8rem;
+    font-weight: 600;
+    line-height: 1.67;
+}
+
+.intro__image {
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    padding-left: 76px;
+    flex: 1;
+    column-gap: 20px;
+    position: relative;
+}
+
+.intro__image::before {
+    content: "";
+    position: absolute;
+    left: 200px;
+    top: 110px;
+    border-radius: 340px;
+    width: 340px;
+    height: 340px;
+    flex-shrink: 0;
+    background: #4dbb9a;
+    filter: blur(137px);
+    z-index: -1;
+}
+
+.intro__img {
+    width: 202px;
+    height: 466px;
+    flex-shrink: 0;
+    object-fit: cover;
+    border-radius: 110px;
+    transition: transform 0.5s ease-in-out;
+}
+
+.intro__img:hover {
+    transform: translateY(-50px);
+}
+
+.intro__img:nth-child(2) {
+    margin-top: 77px;
+}
